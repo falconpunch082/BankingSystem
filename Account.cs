@@ -21,7 +21,6 @@ namespace BankingSystem
         public decimal Balance
         {
             get { return _balance; }
-            set { _balance = value; }
         }
 
         // Constructor
@@ -29,6 +28,40 @@ namespace BankingSystem
         {
             this._balance = balance;
             this._name = name;
+        }
+
+        // Methods
+        public Boolean Deposit(decimal amount)
+        {
+            if (amount > 0) // check if amount is more than zero
+            {
+                this._balance += amount;
+                return true;
+            }
+            else // case if amount is less or equal to zero
+            {
+                return false;
+            }
+        }
+
+        public Boolean Withdraw(decimal amount)
+        {
+            if (amount > 0) // check if amount is more than zero
+            {
+                if ((this._balance - amount) >= 0) // check if after withdrawal balance is zero or more
+                {
+                    this._balance -= amount;
+                    return true;
+                }
+                else // case if with withdrawal balance is negative
+                {
+                    return false;
+                }
+            }
+            else // case if amount is less or equal to zero
+            {
+                return false;
+            }
         }
 
         // Methods
