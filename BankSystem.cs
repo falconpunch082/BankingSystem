@@ -10,13 +10,13 @@ namespace BankingSystem
         // MenuOption enumeration
         public enum MenuOption
         {
-            Withdraw,
-            Deposit,
-            Transfer,
-            Print,
-            AddAccount,
-            PrintHistory,
-            Quit
+            Withdraw = 1,
+            Deposit = 2 ,
+            Transfer = 3,
+            Print = 4,
+            AddAccount = 5,
+            PrintHistory = 6,
+            Quit = 7
         }
 
         // Menu function
@@ -81,32 +81,33 @@ namespace BankingSystem
                 }
             } while (!valid);
 
-            // Returning enum based on option
+            // Returning response based on option
             switch (input)
             {
                 case 1:
                     Console.WriteLine("Withdraw option chosen...\n");
-                    return MenuOption.Withdraw;
+                    break;
                 case 2:
                     Console.WriteLine("Deposit option chosen...\n");
-                    return MenuOption.Deposit;
+                    break;
                 case 3:
                     Console.WriteLine("Transfer option chosen...\n");
-                    return MenuOption.Transfer;
+                    break;
                 case 4:
                     Console.WriteLine("Print option chosen...\n");
-                    return MenuOption.Print;
+                    break;
                 case 5:
                     Console.WriteLine("Adding new account...\n");
-                    return MenuOption.AddAccount;
+                    break;
                 case 6:
-                    Console.WriteLine("Showing transaction history...\n");
-                    return MenuOption.PrintHistory;
-                case 7:
                     Console.WriteLine("Quitting application...\n");
-                    return MenuOption.Quit;
-                default: return MenuOption.Quit;
+                    break;
             }
+
+            // Providing MenuOption outupt by casting input int into MenuOption object
+            MenuOption selected = (MenuOption)input;
+
+            return selected;
         }
 
         // FindAccount function
