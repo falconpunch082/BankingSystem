@@ -42,10 +42,7 @@ namespace BankingSystem
             this._amount = amount;
         }
 
-        public virtual void Print()
-        {
-            // Placeholder
-        }
+        abstract public void Print(); // Removes need for placeholder
 
         public virtual void Execute()
         {

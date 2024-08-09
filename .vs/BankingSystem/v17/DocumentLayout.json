@@ -39,8 +39,7 @@
               "ViewState": "AQIAAAMAAAAAAAAAAAAAABAAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-13T22:16:08.542Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -52,8 +51,7 @@
               "RelativeToolTip": "Bank.cs",
               "ViewState": "AQIAAFcAAAAAAAAAAAAmwCQAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-21T06:22:05.733Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-21T06:22:05.733Z"
             },
             {
               "$type": "Document",
@@ -65,8 +63,7 @@
               "RelativeToolTip": "Transaction.cs",
               "ViewState": "AQIAANwAAAAAAAAAAAA8wHwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-19T11:12:37.895Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-19T11:12:37.895Z"
             },
             {
               "$type": "Document",
